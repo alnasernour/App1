@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Story"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Please select the story that you want to read it :) "
+        android:textSize="50dp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <RadioGroup
+        android:id="@+id/G"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <RadioButton
+            android:id="@+id/b1"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Story 1"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/holo_orange_light"
+            android:textSize="50dp"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Story 2"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/holo_orange_light"
+            android:textSize="50dp"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Story 3"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/holo_orange_light"
+            android:textSize="50dp"
+            android:padding="10dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="go"
+        android:text="Next"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30dp" />
+
+
+</LinearLayout>
